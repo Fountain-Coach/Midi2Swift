@@ -1,0 +1,33 @@
+name-template: 'v$NEXT_PATCH_VERSION'
+tag-template: 'v$NEXT_PATCH_VERSION'
+
+categories:
+  - title: '🚨 Breaking changes'
+    labels: ['breaking', 'semver:major']
+  - title: '✨ Features'
+    labels: ['feature', 'enhancement', 'semver:minor']
+  - title: '🐛 Fixes'
+    labels: ['bug', 'fix', 'semver:patch']
+  - title: '🧪 Tests'
+    labels: ['test', 'tests']
+  - title: '🧰 Maintenance'
+    labels: ['chore', 'ci', 'docs', 'refactor']
+
+change-template: '- $TITLE (#$NUMBER) by @$AUTHOR'
+change-title-escapes: '\<*_&'
+
+version-resolver:
+  major:
+    labels: ['breaking', 'semver:major']
+  minor:
+    labels: ['feature', 'enhancement', 'semver:minor']
+  patch:
+    labels: ['fix', 'bug', 'semver:patch']
+  default: patch
+
+exclude-labels:
+  - 'skip-changelog'
+
+template: |
+  ## What’s Changed
+  $CHANGES
