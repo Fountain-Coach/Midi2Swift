@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "family": "ChannelVoice2",
+      "name": "ChannelVoice2.PerNotePitchBend",
+      "containerBits": 64,
+      "fields": [
+        { "name": "mt",            "bitOffset": 0,  "bitWidth": 4 },
+        { "name": "group",         "bitOffset": 4,  "bitWidth": 4,  "range": [0,15] },
+        { "name": "statusNibble",  "bitOffset": 8,  "bitWidth": 4 },
+        { "name": "channel",       "bitOffset": 12, "bitWidth": 4,  "range": [0,15] },
+        { "name": "r_note_flag",   "bitOffset": 16, "bitWidth": 1,  "reserved": true },
+        { "name": "noteNumber",    "bitOffset": 17, "bitWidth": 7,  "range": [0,127] },
+        { "name": "reservedIdx2",  "bitOffset": 24, "bitWidth": 8,  "reserved": true },
+        { "name": "bend",          "bitOffset": 32, "bitWidth": 32 }
+      ],
+      "defaults": { "mt": 4, "statusNibble": 6, "r_note_flag": 0, "reservedIdx2": 0 }
+    },
+    {
+      "family": "ChannelVoice2",
+      "name": "ChannelVoice2.PerNoteManagement",
+      "containerBits": 64,
+      "fields": [
+        { "name": "mt",            "bitOffset": 0,  "bitWidth": 4 },
+        { "name": "group",         "bitOffset": 4,  "bitWidth": 4,  "range": [0,15] },
+        { "name": "statusNibble",  "bitOffset": 8,  "bitWidth": 4 },
+        { "name": "channel",       "bitOffset": 12, "bitWidth": 4,  "range": [0,15] },
+        { "name": "r_note_flag",   "bitOffset": 16, "bitWidth": 1,  "reserved": true },
+        { "name": "noteNumber",    "bitOffset": 17, "bitWidth": 7,  "range": [0,127] },
+        { "name": "optFlags",      "bitOffset": 24, "bitWidth": 8 },
+        { "name": "reservedD1",    "bitOffset": 32, "bitWidth": 8,  "reserved": true },
+        { "name": "reservedD2",    "bitOffset": 40, "bitWidth": 8,  "reserved": true },
+        { "name": "reservedD3",    "bitOffset": 48, "bitWidth": 8,  "reserved": true },
+        { "name": "reservedD4",    "bitOffset": 56, "bitWidth": 8,  "reserved": true }
+      ],
+      "defaults": { "mt": 4, "statusNibble": 15, "r_note_flag": 0, "optFlags": 0, "reservedD1": 0, "reservedD2": 0, "reservedD3": 0, "reservedD4": 0 }
+    }
+  ]
+}

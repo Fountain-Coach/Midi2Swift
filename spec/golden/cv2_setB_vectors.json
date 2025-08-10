@@ -1,0 +1,37 @@
+[
+  {
+    "case": "PerNotePitchBend_g1_c3_note60_center",
+    "message": "ChannelVoice2.PerNotePitchBend",
+    "container": "UMP64",
+    "raw": "0x41633C0080000000",
+    "fields": { "mt": 4, "group": 1, "statusNibble": 6, "channel": 3, "r_note_flag": 0, "noteNumber": 60, "reservedIdx2": 0, "bend": 2147483648 }
+  },
+  {
+    "case": "PerNotePitchBend_g0_c0_note0_min",
+    "message": "ChannelVoice2.PerNotePitchBend",
+    "container": "UMP64",
+    "raw": "0x4060000000000000",
+    "fields": { "mt": 4, "group": 0, "statusNibble": 6, "channel": 0, "r_note_flag": 0, "noteNumber": 0, "reservedIdx2": 0, "bend": 0 }
+  },
+  {
+    "case": "PerNotePitchBend_g0_c0_note0_max",
+    "message": "ChannelVoice2.PerNotePitchBend",
+    "container": "UMP64",
+    "raw": "0x40600000FFFFFFFF",
+    "fields": { "mt": 4, "group": 0, "statusNibble": 6, "channel": 0, "r_note_flag": 0, "noteNumber": 0, "reservedIdx2": 0, "bend": 4294967295 }
+  },
+  {
+    "case": "PerNoteManagement_g2_c0_note60_flags_D",
+    "message": "ChannelVoice2.PerNoteManagement",
+    "container": "UMP64",
+    "raw": "0x42F03C0200000000",
+    "fields": { "mt": 4, "group": 2, "statusNibble": 15, "channel": 0, "r_note_flag": 0, "noteNumber": 60, "optFlags": 2, "reservedD1": 0, "reservedD2": 0, "reservedD3": 0, "reservedD4": 0 }
+  },
+  {
+    "case": "PerNoteManagement_g2_c0_note60_flags_DS",
+    "message": "ChannelVoice2.PerNoteManagement",
+    "container": "UMP64",
+    "raw": "0x42F03C0300000000",
+    "fields": { "mt": 4, "group": 2, "statusNibble": 15, "channel": 0, "r_note_flag": 0, "noteNumber": 60, "optFlags": 3, "reservedD1": 0, "reservedD2": 0, "reservedD3": 0, "reservedD4": 0 }
+  }
+]
