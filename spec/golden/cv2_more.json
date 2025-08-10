@@ -1,0 +1,34 @@
+[
+  {
+    "case": "PolyPressure_g0_c0_60_mid",
+    "message": "ChannelVoice2.PolyPressure",
+    "container": "UMP64",
+    "raw": "0x40A03C0080000000",
+    "fields": { "mt": 4, "group": 0, "statusNibble": 10, "channel": 0, "noteNumber": 60, "reserved": 0, "pressure": 2147483648 },
+    "provenance": { "doc": "M2-104", "note": "CV2 Poly Pressure 32-bit mid" }
+  },
+  {
+    "case": "PolyPressure_g1_c4_16_pattern",
+    "message": "ChannelVoice2.PolyPressure",
+    "container": "UMP64",
+    "raw": "0x41A4100001020304",
+    "fields": { "mt": 4, "group": 1, "statusNibble": 10, "channel": 4, "noteNumber": 16, "reserved": 0, "pressure": 16909060 },
+    "provenance": { "doc": "M2-104", "note": "CV2 Poly Pressure sample pattern" }
+  },
+  {
+    "case": "NoteOn_g2_c7_00_full",
+    "message": "ChannelVoice2.NoteOn",
+    "container": "UMP64",
+    "raw": "0x42970000FFFF0000",
+    "fields": { "mt": 4, "group": 2, "statusNibble": 9, "channel": 7, "noteNumber": 0, "attributeType": 0, "velocity": 65535, "attributeData": 0 },
+    "provenance": { "doc": "M2-104", "note": "CV2 Note On max velocity" }
+  },
+  {
+    "case": "NoteOff_g15_c3_127_zero",
+    "message": "ChannelVoice2.NoteOff",
+    "container": "UMP64",
+    "raw": "0x4F837F0000000000",
+    "fields": { "mt": 4, "group": 15, "statusNibble": 8, "channel": 3, "noteNumber": 127, "attributeType": 0, "velocity": 0, "attributeData": 0 },
+    "provenance": { "doc": "M2-104", "note": "CV2 Note Off edge cases" }
+  }
+]
