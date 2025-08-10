@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "family": "ChannelVoice2",
+      "name": "ChannelVoice2.ChannelPressure",
+      "containerBits": 64,
+      "fields": [
+        { "name": "mt",           "bitOffset": 0,  "bitWidth": 4 },
+        { "name": "group",        "bitOffset": 4,  "bitWidth": 4,  "range": [0,15] },
+        { "name": "statusNibble", "bitOffset": 8,  "bitWidth": 4 },
+        { "name": "channel",      "bitOffset": 12, "bitWidth": 4,  "range": [0,15] },
+        { "name": "reservedIdx",  "bitOffset": 16, "bitWidth": 16, "reserved": true },
+        { "name": "pressure",     "bitOffset": 32, "bitWidth": 32 }
+      ],
+      "defaults": { "mt": 4, "statusNibble": 13, "reservedIdx": 0 }
+    },
+    {
+      "family": "ChannelVoice2",
+      "name": "ChannelVoice2.PitchBend",
+      "containerBits": 64,
+      "fields": [
+        { "name": "mt",           "bitOffset": 0,  "bitWidth": 4 },
+        { "name": "group",        "bitOffset": 4,  "bitWidth": 4,  "range": [0,15] },
+        { "name": "statusNibble", "bitOffset": 8,  "bitWidth": 4 },
+        { "name": "channel",      "bitOffset": 12, "bitWidth": 4,  "range": [0,15] },
+        { "name": "reservedIdx",  "bitOffset": 16, "bitWidth": 16, "reserved": true },
+        { "name": "bend",         "bitOffset": 32, "bitWidth": 32 }
+      ],
+      "defaults": { "mt": 4, "statusNibble": 14, "reservedIdx": 0 }
+    },
+    {
+      "family": "ChannelVoice2",
+      "name": "ChannelVoice2.ProgramChange",
+      "containerBits": 64,
+      "fields": [
+        { "name": "mt",           "bitOffset": 0,  "bitWidth": 4 },
+        { "name": "group",        "bitOffset": 4,  "bitWidth": 4,  "range": [0,15] },
+        { "name": "statusNibble", "bitOffset": 8,  "bitWidth": 4 },
+        { "name": "channel",      "bitOffset": 12, "bitWidth": 4,  "range": [0,15] },
+
+        { "name": "optFlags",     "bitOffset": 16, "bitWidth": 4 },     // includes Bank Valid bit (B)
+        { "name": "program",      "bitOffset": 20, "bitWidth": 7,  "range": [0,127] },
+        { "name": "reservedIdx",  "bitOffset": 27, "bitWidth": 5,  "reserved": true },
+
+        { "name": "reservedD",    "bitOffset": 32, "bitWidth": 18, "reserved": true },
+        { "name": "bankMSB",      "bitOffset": 50, "bitWidth": 7,  "range": [0,127] },
+        { "name": "bankLSB",      "bitOffset": 57, "bitWidth": 7,  "range": [0,127] }
+      ],
+      "defaults": { "mt": 4, "statusNibble": 12, "optFlags": 0, "reservedIdx": 0, "reservedD": 0, "bankMSB": 0, "bankLSB": 0 }
+    }
+  ]
+}
