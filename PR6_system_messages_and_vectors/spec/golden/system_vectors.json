@@ -1,0 +1,87 @@
+[
+  {
+    "case": "TimingClock_g0",
+    "message": "System.TimingClock",
+    "container": "UMP32",
+    "raw": "0x10F80000",
+    "fields": {
+      "mt": 1,
+      "group": 0,
+      "status": 248,
+      "byte3": 0,
+      "byte4": 0
+    },
+    "provenance": {
+      "doc": "M2-104",
+      "table": "27"
+    }
+  },
+  {
+    "case": "Start_g0",
+    "message": "System.Start",
+    "container": "UMP32",
+    "raw": "0x10FA0000",
+    "fields": {
+      "mt": 1,
+      "group": 0,
+      "status": 250,
+      "byte3": 0,
+      "byte4": 0
+    },
+    "provenance": {
+      "doc": "M2-104",
+      "table": "27"
+    }
+  },
+  {
+    "case": "Stop_g0",
+    "message": "System.Stop",
+    "container": "UMP32",
+    "raw": "0x10FC0000",
+    "fields": {
+      "mt": 1,
+      "group": 0,
+      "status": 252,
+      "byte3": 0,
+      "byte4": 0
+    },
+    "provenance": {
+      "doc": "M2-104",
+      "table": "27"
+    }
+  },
+  {
+    "case": "TimingClock_g1",
+    "message": "System.TimingClock",
+    "container": "UMP32",
+    "raw": "0x11F80000",
+    "fields": {
+      "mt": 1,
+      "group": 1,
+      "status": 248,
+      "byte3": 0,
+      "byte4": 0
+    },
+    "provenance": {
+      "doc": "M2-104",
+      "table": "27"
+    }
+  },
+  {
+    "case": "ActiveSensing_g1",
+    "message": "System.ActiveSensing",
+    "container": "UMP32",
+    "raw": "0x11FE0000",
+    "fields": {
+      "mt": 1,
+      "group": 1,
+      "status": 254,
+      "byte3": 0,
+      "byte4": 0
+    },
+    "provenance": {
+      "doc": "M2-104",
+      "table": "27"
+    }
+  }
+]
