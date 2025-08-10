@@ -1,4 +1,0 @@
-module MIDI_CI {
-    header "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/MIDI_CI.build/MIDI_CI-Swift.h"
-    requires objc
-}

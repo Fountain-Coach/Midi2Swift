@@ -4,3 +4,8 @@
 .xcworkspace/
 xcuserdata/
 DerivedData/
+# build caches (ensure not tracked again)
+swift/Midi2Swift/.build/
+swift/Midi2Swift/.swiftpm/
+tools/.build/
+tools/.swiftpm/
