@@ -1,0 +1,26 @@
+[
+  {
+    "case": "NOOP",
+    "message": "Utility.NOOP",
+    "container": "UMP32",
+    "raw": "0x00000000",
+    "fields": { "mt": 0, "reservedGroup": 0, "opcode": 0, "reserved0": 0, "reserved1": 0 },
+    "provenance": { "doc": "M2-104 §7.2.1" }
+  },
+  {
+    "case": "JRClock_t0x1234",
+    "message": "Utility.JRClock",
+    "container": "UMP32",
+    "raw": "0x00011234",
+    "fields": { "mt": 0, "reservedGroup": 0, "opcode": 1, "timeMSB": 0x12, "timeLSB": 0x34 },
+    "provenance": { "doc": "M2-104 §7.2.2.1 (16-bit time)" }
+  },
+  {
+    "case": "JRTimestamp_t0x00A1",
+    "message": "Utility.JRTimestamp",
+    "container": "UMP32",
+    "raw": "0x000200A1",
+    "fields": { "mt": 0, "reservedGroup": 0, "opcode": 2, "timeMSB": 0x00, "timeLSB": 0xA1 },
+    "provenance": { "doc": "M2-104 §7.2.2.2 (16-bit time)" }
+  }
+]

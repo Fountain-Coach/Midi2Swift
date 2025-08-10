@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "family": "Utility",
+      "name": "Utility.NOOP",
+      "containerBits": 32,
+      "fields": [
+        { "name": "mt", "bitOffset": 0, "bitWidth": 4 },
+        { "name": "reservedGroup", "bitOffset": 4, "bitWidth": 4, "reserved": true },
+        { "name": "opcode", "bitOffset": 8, "bitWidth": 8 },
+        { "name": "reserved0", "bitOffset": 16, "bitWidth": 8, "reserved": true },
+        { "name": "reserved1", "bitOffset": 24, "bitWidth": 8, "reserved": true }
+      ],
+      "defaults": { "mt": 0, "reservedGroup": 0, "opcode": 0, "reserved0": 0, "reserved1": 0 }
+    },
+    {
+      "family": "Utility",
+      "name": "Utility.JRClock",
+      "containerBits": 32,
+      "fields": [
+        { "name": "mt", "bitOffset": 0, "bitWidth": 4 },
+        { "name": "reservedGroup", "bitOffset": 4, "bitWidth": 4, "reserved": true },
+        { "name": "opcode", "bitOffset": 8, "bitWidth": 8 },
+        { "name": "timeMSB", "bitOffset": 16, "bitWidth": 8 },
+        { "name": "timeLSB", "bitOffset": 24, "bitWidth": 8 }
+      ],
+      "defaults": { "mt": 0, "reservedGroup": 0, "opcode": 1 },
+      "provenance": { "doc": "M2-104 §7.2.2.1, Table 26/Appendix F" }
+    },
+    {
+      "family": "Utility",
+      "name": "Utility.JRTimestamp",
+      "containerBits": 32,
+      "fields": [
+        { "name": "mt", "bitOffset": 0, "bitWidth": 4 },
+        { "name": "reservedGroup", "bitOffset": 4, "bitWidth": 4, "reserved": true },
+        { "name": "opcode", "bitOffset": 8, "bitWidth": 8 },
+        { "name": "timeMSB", "bitOffset": 16, "bitWidth": 8 },
+        { "name": "timeLSB", "bitOffset": 24, "bitWidth": 8 }
+      ],
+      "defaults": { "mt": 0, "reservedGroup": 0, "opcode": 2 },
+      "provenance": { "doc": "M2-104 §7.2.2.2, Table 26/Appendix F" }
+    }
+  ]
+}
