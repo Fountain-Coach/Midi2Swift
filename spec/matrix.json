@@ -1,0 +1,1232 @@
+{
+  "ci" : {
+    "flows" : [
+      {
+        "events" : [
+          "Start",
+          "Reply",
+          "Timeout",
+          "Error"
+        ],
+        "name" : "Discovery",
+        "states" : [
+          "Idle",
+          "ProbeSent",
+          "Discovered",
+          "Failed"
+        ]
+      },
+      {
+        "events" : [
+          "Start",
+          "Accept",
+          "Timeout",
+          "Error"
+        ],
+        "name" : "ProtocolNegotiation",
+        "states" : [
+          "Idle",
+          "OfferSent",
+          "Negotiated",
+          "Failed"
+        ]
+      }
+    ]
+  },
+  "messages" : [
+    {
+      "containerBits" : 32,
+      "defaults" : {
+        "mt" : 2,
+        "reserved0" : 0
+      },
+      "family" : "CV1",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 8,
+          "name" : "status"
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "pressure"
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "reserved0",
+          "reserved" : true
+        }
+      ],
+      "name" : "CV1.ChannelPressure"
+    },
+    {
+      "containerBits" : 32,
+      "defaults" : {
+        "mt" : 2
+      },
+      "family" : "CV1",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 8,
+          "name" : "status"
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "data1"
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "data2"
+        }
+      ],
+      "name" : "CV1.ControlChange"
+    },
+    {
+      "containerBits" : 32,
+      "defaults" : {
+        "mt" : 2
+      },
+      "family" : "CV1",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 8,
+          "name" : "status"
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "data1"
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "data2"
+        }
+      ],
+      "name" : "CV1.NoteOff"
+    },
+    {
+      "containerBits" : 32,
+      "defaults" : {
+        "mt" : 2
+      },
+      "family" : "CV1",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 8,
+          "name" : "status"
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "data1"
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "data2"
+        }
+      ],
+      "name" : "CV1.NoteOn"
+    },
+    {
+      "containerBits" : 32,
+      "defaults" : {
+        "mt" : 2
+      },
+      "family" : "CV1",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 8,
+          "name" : "status"
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "lsb"
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "msb"
+        }
+      ],
+      "name" : "CV1.PitchBend"
+    },
+    {
+      "containerBits" : 32,
+      "defaults" : {
+        "mt" : 2
+      },
+      "family" : "CV1",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 8,
+          "name" : "status"
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "data1"
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "data2"
+        }
+      ],
+      "name" : "CV1.PolyPressure"
+    },
+    {
+      "containerBits" : 32,
+      "defaults" : {
+        "mt" : 2,
+        "reserved0" : 0
+      },
+      "family" : "CV1",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 8,
+          "name" : "status"
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "program"
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "reserved0",
+          "reserved" : true
+        }
+      ],
+      "name" : "CV1.ProgramChange"
+    },
+    {
+      "containerBits" : 64,
+      "defaults" : {
+        "attributeData" : 0,
+        "attributeType" : 0,
+        "mt" : 4,
+        "statusNibble" : 8
+      },
+      "family" : "ChannelVoice2",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 4,
+          "name" : "statusNibble"
+        },
+        {
+          "bitOffset" : 12,
+          "bitWidth" : 4,
+          "name" : "channel",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "noteNumber",
+          "range" : [
+            0,
+            127
+          ]
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "attributeType"
+        },
+        {
+          "bitOffset" : 32,
+          "bitWidth" : 16,
+          "name" : "velocity",
+          "range" : [
+            0,
+            65535
+          ]
+        },
+        {
+          "bitOffset" : 48,
+          "bitWidth" : 16,
+          "name" : "attributeData"
+        }
+      ],
+      "name" : "ChannelVoice2.NoteOff"
+    },
+    {
+      "containerBits" : 64,
+      "defaults" : {
+        "attributeData" : 0,
+        "attributeType" : 0,
+        "mt" : 4,
+        "statusNibble" : 9
+      },
+      "family" : "ChannelVoice2",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 4,
+          "name" : "statusNibble"
+        },
+        {
+          "bitOffset" : 12,
+          "bitWidth" : 4,
+          "name" : "channel",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "noteNumber",
+          "range" : [
+            0,
+            127
+          ]
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "attributeType"
+        },
+        {
+          "bitOffset" : 32,
+          "bitWidth" : 16,
+          "name" : "velocity",
+          "range" : [
+            0,
+            65535
+          ]
+        },
+        {
+          "bitOffset" : 48,
+          "bitWidth" : 16,
+          "name" : "attributeData"
+        }
+      ],
+      "name" : "ChannelVoice2.NoteOn"
+    },
+    {
+      "containerBits" : 64,
+      "defaults" : {
+        "mt" : 4,
+        "optFlags" : 0,
+        "r_note_flag" : 0,
+        "reservedD1" : 0,
+        "reservedD2" : 0,
+        "reservedD3" : 0,
+        "reservedD4" : 0,
+        "statusNibble" : 15
+      },
+      "family" : "ChannelVoice2",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 4,
+          "name" : "statusNibble"
+        },
+        {
+          "bitOffset" : 12,
+          "bitWidth" : 4,
+          "name" : "channel",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 1,
+          "name" : "r_note_flag",
+          "reserved" : true
+        },
+        {
+          "bitOffset" : 17,
+          "bitWidth" : 7,
+          "name" : "noteNumber",
+          "range" : [
+            0,
+            127
+          ]
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "optFlags"
+        },
+        {
+          "bitOffset" : 32,
+          "bitWidth" : 8,
+          "name" : "reservedD1",
+          "reserved" : true
+        },
+        {
+          "bitOffset" : 40,
+          "bitWidth" : 8,
+          "name" : "reservedD2",
+          "reserved" : true
+        },
+        {
+          "bitOffset" : 48,
+          "bitWidth" : 8,
+          "name" : "reservedD3",
+          "reserved" : true
+        },
+        {
+          "bitOffset" : 56,
+          "bitWidth" : 8,
+          "name" : "reservedD4",
+          "reserved" : true
+        }
+      ],
+      "name" : "ChannelVoice2.PerNoteManagement"
+    },
+    {
+      "containerBits" : 64,
+      "defaults" : {
+        "mt" : 4,
+        "r_note_flag" : 0,
+        "reservedIdx2" : 0,
+        "statusNibble" : 6
+      },
+      "family" : "ChannelVoice2",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 4,
+          "name" : "statusNibble"
+        },
+        {
+          "bitOffset" : 12,
+          "bitWidth" : 4,
+          "name" : "channel",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 1,
+          "name" : "r_note_flag",
+          "reserved" : true
+        },
+        {
+          "bitOffset" : 17,
+          "bitWidth" : 7,
+          "name" : "noteNumber",
+          "range" : [
+            0,
+            127
+          ]
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "reservedIdx2",
+          "reserved" : true
+        },
+        {
+          "bitOffset" : 32,
+          "bitWidth" : 32,
+          "name" : "bend"
+        }
+      ],
+      "name" : "ChannelVoice2.PerNotePitchBend"
+    },
+    {
+      "containerBits" : 64,
+      "defaults" : {
+        "mt" : 4,
+        "reserved" : 0,
+        "statusNibble" : 10
+      },
+      "family" : "ChannelVoice2",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 4,
+          "name" : "statusNibble"
+        },
+        {
+          "bitOffset" : 12,
+          "bitWidth" : 4,
+          "name" : "channel",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "noteNumber",
+          "range" : [
+            0,
+            127
+          ]
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "reserved",
+          "reserved" : true
+        },
+        {
+          "bitOffset" : 32,
+          "bitWidth" : 32,
+          "name" : "pressure"
+        }
+      ],
+      "name" : "ChannelVoice2.PolyPressure"
+    },
+    {
+      "containerBits" : 32,
+      "defaults" : {
+        "data1" : 0,
+        "data2" : 0,
+        "mt" : 3
+      },
+      "family" : "SysEx7",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 4,
+          "name" : "status"
+        },
+        {
+          "bitOffset" : 12,
+          "bitWidth" : 4,
+          "name" : "numBytes",
+          "range" : [
+            0,
+            2
+          ]
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "data1"
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "data2"
+        }
+      ],
+      "name" : "SysEx7.Word"
+    },
+    {
+      "containerBits" : 128,
+      "defaults" : {
+        "length" : 0,
+        "mt" : 5,
+        "streamID" : 0
+      },
+      "family" : "SysEx8",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 8,
+          "name" : "status"
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "streamID"
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "length",
+          "range" : [
+            0,
+            12
+          ]
+        },
+        {
+          "bitOffset" : 32,
+          "bitWidth" : 32,
+          "name" : "payloadW1"
+        },
+        {
+          "bitOffset" : 64,
+          "bitWidth" : 32,
+          "name" : "payloadW2"
+        },
+        {
+          "bitOffset" : 96,
+          "bitWidth" : 32,
+          "name" : "payloadW3"
+        }
+      ],
+      "name" : "SysEx8.Chunk"
+    },
+    {
+      "containerBits" : 32,
+      "defaults" : {
+        "data1" : 0,
+        "data2" : 0,
+        "group" : 0,
+        "mt" : 1,
+        "status" : 242
+      },
+      "family" : "System",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 8,
+          "name" : "status"
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "data1",
+          "reserved" : true
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "data2",
+          "reserved" : true
+        }
+      ],
+      "name" : "System.SongPositionPointer",
+      "provenance" : {
+        "doc" : "M2-104",
+        "section" : "System Common"
+      }
+    },
+    {
+      "containerBits" : 32,
+      "defaults" : {
+        "data1" : 0,
+        "data2" : 0,
+        "group" : 0,
+        "mt" : 1,
+        "status" : 243
+      },
+      "family" : "System",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 8,
+          "name" : "status"
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "data1",
+          "reserved" : true
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "data2",
+          "reserved" : true
+        }
+      ],
+      "name" : "System.SongSelect",
+      "provenance" : {
+        "doc" : "M2-104",
+        "section" : "System Common"
+      },
+      "reservedFields" : [
+        "data2"
+      ]
+    },
+    {
+      "containerBits" : 32,
+      "defaults" : {
+        "data1" : 0,
+        "data2" : 0,
+        "group" : 0,
+        "mt" : 1,
+        "status" : 241
+      },
+      "family" : "System",
+      "fields" : [
+
+      ],
+      "name" : "System.TimeCodeQuarterFrame",
+      "provenance" : {
+        "doc" : "M2-104",
+        "section" : "System Common"
+      },
+      "reservedFields" : [
+        "data2"
+      ]
+    },
+    {
+      "containerBits" : 32,
+      "defaults" : {
+        "data1" : 0,
+        "data2" : 0,
+        "group" : 0,
+        "mt" : 1,
+        "status" : 246
+      },
+      "family" : "System",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 8,
+          "name" : "status"
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "data1",
+          "reserved" : true
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "data2",
+          "reserved" : true
+        }
+      ],
+      "name" : "System.TuneRequest",
+      "provenance" : {
+        "doc" : "M2-104",
+        "section" : "System Common"
+      },
+      "reservedFields" : [
+        "data1",
+        "data2"
+      ]
+    },
+    {
+      "containerBits" : 32,
+      "defaults" : {
+        "mt" : 0,
+        "opcode" : 1,
+        "reservedGroup" : 0
+      },
+      "family" : "Utility",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "reservedGroup",
+          "reserved" : true
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 8,
+          "name" : "opcode"
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "timeMSB"
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "timeLSB"
+        }
+      ],
+      "name" : "Utility.JRClock"
+    },
+    {
+      "containerBits" : 32,
+      "defaults" : {
+        "mt" : 0,
+        "opcode" : 2,
+        "reservedGroup" : 0
+      },
+      "family" : "Utility",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "reservedGroup",
+          "reserved" : true
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 8,
+          "name" : "opcode"
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "timeMSB"
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "timeLSB"
+        }
+      ],
+      "name" : "Utility.JRTimestamp"
+    },
+    {
+      "containerBits" : 32,
+      "defaults" : {
+        "mt" : 0,
+        "opcode" : 0,
+        "reserved0" : 0,
+        "reserved1" : 0,
+        "reservedGroup" : 0
+      },
+      "family" : "Utility",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "reservedGroup",
+          "reserved" : true
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 8,
+          "name" : "opcode"
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "reserved0",
+          "reserved" : true
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "reserved1",
+          "reserved" : true
+        }
+      ],
+      "name" : "Utility.NOOP"
+    }
+  ],
+  "meta" : {
+    "generated_at" : "2025-08-10T18:53:13Z",
+    "source" : "seeds-only"
+  },
+  "profiles" : {
+    "messages" : [
+      {
+        "addressing" : [
+          "Endpoint",
+          "FunctionBlock",
+          "Group",
+          "Channel"
+        ],
+        "name" : "ProfileInquiry",
+        "provenance" : {
+          "doc" : "M2-102"
+        }
+      },
+      {
+        "addressing" : [
+          "Endpoint",
+          "FunctionBlock",
+          "Group",
+          "Channel"
+        ],
+        "name" : "ProfileInquiryReply",
+        "provenance" : {
+          "doc" : "M2-102"
+        }
+      },
+      {
+        "addressing" : [
+          "FunctionBlock",
+          "Group",
+          "Channel"
+        ],
+        "name" : "SetProfileOn",
+        "provenance" : {
+          "doc" : "M2-102"
+        }
+      },
+      {
+        "addressing" : [
+          "FunctionBlock",
+          "Group",
+          "Channel"
+        ],
+        "name" : "SetProfileOff",
+        "provenance" : {
+          "doc" : "M2-102"
+        }
+      },
+      {
+        "addressing" : [
+          "FunctionBlock",
+          "Group",
+          "Channel"
+        ],
+        "name" : "ProfileEnabledReport",
+        "provenance" : {
+          "doc" : "M2-102"
+        }
+      },
+      {
+        "addressing" : [
+          "FunctionBlock",
+          "Group",
+          "Channel"
+        ],
+        "name" : "ProfileDisabledReport",
+        "provenance" : {
+          "doc" : "M2-102"
+        }
+      },
+      {
+        "addressing" : [
+          "FunctionBlock",
+          "Group",
+          "Channel"
+        ],
+        "name" : "ProfileDetailsInquiry",
+        "provenance" : {
+          "doc" : "M2-102"
+        }
+      },
+      {
+        "addressing" : [
+          "FunctionBlock",
+          "Group",
+          "Channel"
+        ],
+        "name" : "ProfileDetailsReply",
+        "provenance" : {
+          "doc" : "M2-102"
+        }
+      }
+    ]
+  },
+  "property_exchange" : {
+    "headers" : {
+      "reply" : {
+        "fields" : [
+          {
+            "name" : "status",
+            "type" : "int"
+          },
+          {
+            "name" : "reason",
+            "type" : "string?"
+          },
+          {
+            "name" : "version",
+            "type" : "string"
+          }
+        ],
+        "provenance" : {
+          "doc" : "M2-103"
+        }
+      },
+      "request" : {
+        "fields" : [
+          {
+            "name" : "resource",
+            "type" : "string"
+          },
+          {
+            "name" : "version",
+            "type" : "string"
+          },
+          {
+            "name" : "contentType",
+            "type" : "string"
+          }
+        ],
+        "provenance" : {
+          "doc" : "M2-103"
+        }
+      }
+    },
+    "notes" : [
+      "Structure-only seeds for PE. Numeric status code mapping will be lifted from the PDF in a later PR."
+    ],
+    "resources" : [
+      {
+        "name" : "identity",
+        "provenance" : {
+          "doc" : "M2-103"
+        },
+        "version" : "1.0"
+      },
+      {
+        "name" : "profile-list",
+        "provenance" : {
+          "doc" : "M2-103"
+        },
+        "version" : "1.0"
+      }
+    ]
+  }
+}
