@@ -1,0 +1,87 @@
+[
+  {
+    "case": "TCQF_val5_g0",
+    "message": "System.TimeCodeQuarterFrame",
+    "container": "UMP32",
+    "raw": "0x10F10500",
+    "fields": {
+      "mt": 1,
+      "group": 0,
+      "status": 241,
+      "data1": 5,
+      "data2": 0
+    },
+    "provenance": {
+      "doc": "M2-104",
+      "note": "System Common general format"
+    }
+  },
+  {
+    "case": "SPP_0x1234_g0",
+    "message": "System.SongPositionPointer",
+    "container": "UMP32",
+    "raw": "0x10F23412",
+    "fields": {
+      "mt": 1,
+      "group": 0,
+      "status": 242,
+      "data1": 52,
+      "data2": 18
+    },
+    "provenance": {
+      "doc": "M2-104",
+      "note": "SPP LSB/MSB order"
+    }
+  },
+  {
+    "case": "SongSelect_7_g0",
+    "message": "System.SongSelect",
+    "container": "UMP32",
+    "raw": "0x10F30700",
+    "fields": {
+      "mt": 1,
+      "group": 0,
+      "status": 243,
+      "data1": 7,
+      "data2": 0
+    },
+    "provenance": {
+      "doc": "M2-104",
+      "note": "1 data byte"
+    }
+  },
+  {
+    "case": "TuneRequest_g0",
+    "message": "System.TuneRequest",
+    "container": "UMP32",
+    "raw": "0x10F60000",
+    "fields": {
+      "mt": 1,
+      "group": 0,
+      "status": 246,
+      "data1": 0,
+      "data2": 0
+    },
+    "provenance": {
+      "doc": "M2-104",
+      "note": "no data bytes"
+    }
+  },
+  {
+    "case": "SPP_0x1234_g2",
+    "message": "System.SongPositionPointer",
+    "container": "UMP32",
+    "raw": "0x12F23412",
+    "fields": {
+      "mt": 1,
+      "group": 2,
+      "status": 242,
+      "data1": 52,
+      "data2": 18
+    },
+    "provenance": {
+      "doc": "M2-104",
+      "note": "grouped addressing"
+    }
+  }
+]
