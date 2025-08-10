@@ -1,0 +1,14 @@
+{
+  "flows": [
+    {
+      "name": "Discovery",
+      "states": ["Idle","ProbeSent","Discovered","Failed"],
+      "events": ["Start","Reply","Timeout","Error"]
+    },
+    {
+      "name": "ProtocolNegotiation",
+      "states": ["Idle","OfferSent","Negotiated","Failed"],
+      "events": ["Start","Accept","Timeout","Error"]
+    }
+  ]
+}
