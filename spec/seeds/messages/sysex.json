@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "family": "SysEx7",
+      "name": "SysEx7.Word",
+      "containerBits": 32,
+      "fields": [
+        { "name": "mt", "bitOffset": 0, "bitWidth": 4 },
+        { "name": "group", "bitOffset": 4, "bitWidth": 4, "range": [0,15] },
+        { "name": "status", "bitOffset": 8, "bitWidth": 4 },
+        { "name": "numBytes", "bitOffset": 12, "bitWidth": 4, "range": [0,2] },
+        { "name": "data1", "bitOffset": 16, "bitWidth": 8 },
+        { "name": "data2", "bitOffset": 24, "bitWidth": 8 }
+      ],
+      "defaults": { "mt": 3, "data1": 0, "data2": 0 }
+    },
+    {
+      "family": "SysEx8",
+      "name": "SysEx8.Chunk",
+      "containerBits": 128,
+      "fields": [
+        { "name": "mt", "bitOffset": 0, "bitWidth": 4 },
+        { "name": "group", "bitOffset": 4, "bitWidth": 4, "range": [0,15] },
+        { "name": "status", "bitOffset": 8, "bitWidth": 8 },
+        { "name": "streamID", "bitOffset": 16, "bitWidth": 8 },
+        { "name": "length", "bitOffset": 24, "bitWidth": 8, "range": [0,12] },
+        { "name": "payloadW1", "bitOffset": 32, "bitWidth": 32 },
+        { "name": "payloadW2", "bitOffset": 64, "bitWidth": 32 },
+        { "name": "payloadW3", "bitOffset": 96, "bitWidth": 32 }
+      ],
+      "defaults": { "mt": 5, "streamID": 0, "length": 0 }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "case": "Sysex8_empty_complete_g2_sid55",
+    "message": "SysEx8.Chunk",
+    "container": "UMP128",
+    "raw": "0x52_00_37_00_00000000_00000000_00000000",
+    "fields": { "mt": 5, "group": 2, "status": 0x00, "streamID": 0x37, "length": 0,
+      "payloadW1": 0, "payloadW2": 0, "payloadW3": 0 }
+  },
+  {
+    "case": "Sysex8_5bytes_start_gF_sid01",
+    "message": "SysEx8.Chunk",
+    "container": "UMP128",
+    "raw": "0x5F_00_01_05_11223344_55000000_00000000",
+    "fields": { "mt": 5, "group": 15, "status": 0x11, "streamID": 0x01, "length": 5,
+      "payloadW1": 0x11223344, "payloadW2": 0x55000000, "payloadW3": 0 }
+  },
+  {
+    "case": "Sysex8_3bytes_end_gF_sid01",
+    "message": "SysEx8.Chunk",
+    "container": "UMP128",
+    "raw": "0x5F_30_01_03_A1B2C300_00000000_00000000",
+    "fields": { "mt": 5, "group": 15, "status": 0x33, "streamID": 0x01, "length": 3,
+      "payloadW1": 0xA1B2C300, "payloadW2": 0, "payloadW3": 0 }
+  }
+]
