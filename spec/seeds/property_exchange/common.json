@@ -1,0 +1,61 @@
+{
+  "resources": [
+    {
+      "name": "identity",
+      "version": "1.0",
+      "provenance": {
+        "doc": "M2-103"
+      }
+    },
+    {
+      "name": "profile-list",
+      "version": "1.0",
+      "provenance": {
+        "doc": "M2-103"
+      }
+    }
+  ],
+  "headers": {
+    "request": {
+      "fields": [
+        {
+          "name": "resource",
+          "type": "string"
+        },
+        {
+          "name": "version",
+          "type": "string"
+        },
+        {
+          "name": "contentType",
+          "type": "string"
+        }
+      ],
+      "provenance": {
+        "doc": "M2-103"
+      }
+    },
+    "reply": {
+      "fields": [
+        {
+          "name": "status",
+          "type": "int"
+        },
+        {
+          "name": "reason",
+          "type": "string?"
+        },
+        {
+          "name": "version",
+          "type": "string"
+        }
+      ],
+      "provenance": {
+        "doc": "M2-103"
+      }
+    }
+  },
+  "notes": [
+    "Structure-only seeds for PE. Numeric status code mapping will be lifted from the PDF in a later PR."
+  ]
+}
