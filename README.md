@@ -83,3 +83,7 @@ STRICT_FULL_SPEC=1 make verify  # fails until full coverage is achieved
 ## Profiles seeds & ID type
 - Added `spec/seeds/profiles/common.json` listing Profiles common messages and addressing scopes (structure-only; parsed later).
 - Added `Profiles/ProfileID.swift` with an opaque `ProfileID` that supports 32-bit hex and 128-bit UUID forms, plus tests.
+
+## Property Exchange seeds & minimal headers
+- Added `spec/seeds/property_exchange/common.json` with structure-only seeds for PE resources and headers.
+- Added `PropertyExchange/Headers.swift` with minimal `PERequestHeader`, `PEReplyHeader`, and `PEStatus` (code-based) + tests.
