@@ -1,0 +1,14 @@
+[
+  { "case":"TCQF_val0_g4", "message":"System.TimeCodeQuarterFrame", "container":"UMP32", "raw":"0x14F10000",
+    "fields":{"mt":1,"group":4,"status":241,"data1":0,"data2":0}, "provenance":{"doc":"M2-104","note":"TCQF"} },
+  { "case":"TCQF_val7_g12", "message":"System.TimeCodeQuarterFrame", "container":"UMP32", "raw":"0x1CF10700",
+    "fields":{"mt":1,"group":12,"status":241,"data1":7,"data2":0}, "provenance":{"doc":"M2-104","note":"TCQF"} },
+  { "case":"SPP_0x0000_g5", "message":"System.SongPositionPointer", "container":"UMP32", "raw":"0x15F20000",
+    "fields":{"mt":1,"group":5,"status":242,"data1":0,"data2":0}, "provenance":{"doc":"M2-104","note":"SPP LSB/MSB"} },
+  { "case":"SPP_0x2000_g10", "message":"System.SongPositionPointer", "container":"UMP32", "raw":"0x1AF20020",
+    "fields":{"mt":1,"group":10,"status":242,"data1":0,"data2":32}, "provenance":{"doc":"M2-104","note":"SPP LSB=0x00, MSB=0x20"} },
+  { "case":"SongSelect_3_g8", "message":"System.SongSelect", "container":"UMP32", "raw":"0x18F30300",
+    "fields":{"mt":1,"group":8,"status":243,"data1":3,"data2":0}, "provenance":{"doc":"M2-104","note":"Song Select"} },
+  { "case":"TuneRequest_g11", "message":"System.TuneRequest", "container":"UMP32", "raw":"0x1BF60000",
+    "fields":{"mt":1,"group":11,"status":246,"data1":0,"data2":0}, "provenance":{"doc":"M2-104","note":"Tune Request"} }
+]

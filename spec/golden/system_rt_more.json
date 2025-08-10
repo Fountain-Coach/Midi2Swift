@@ -1,0 +1,10 @@
+[
+  { "case":"Start_g7", "message":"System.Start", "container":"UMP32", "raw":"0x17FA0000",
+    "fields":{"mt":1,"group":7,"status":250,"byte3":0,"byte4":0}, "provenance":{"doc":"M2-104","note":"System RT"} },
+  { "case":"Continue_g15", "message":"System.Continue", "container":"UMP32", "raw":"0x1BFB0000",
+    "fields":{"mt":1,"group":15,"status":251,"byte3":0,"byte4":0}, "provenance":{"doc":"M2-104","note":"System RT"} },
+  { "case":"Reset_g3", "message":"System.Reset", "container":"UMP32", "raw":"0x13FF0000",
+    "fields":{"mt":1,"group":3,"status":255,"byte3":0,"byte4":0}, "provenance":{"doc":"M2-104","note":"System RT"} },
+  { "case":"ActiveSensing_g9", "message":"System.ActiveSensing", "container":"UMP32", "raw":"0x19FE0000",
+    "fields":{"mt":1,"group":9,"status":254,"byte3":0,"byte4":0}, "provenance":{"doc":"M2-104","note":"System RT"} }
+]
