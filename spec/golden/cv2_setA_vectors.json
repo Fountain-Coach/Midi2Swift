@@ -1,0 +1,16 @@
+[
+  {
+    "case": "ChannelPressure_g0_c2_mid",
+    "message": "ChannelVoice2.ChannelPressure",
+    "container": "UMP64",
+    "raw": "0x40D2000080000000",
+    "fields": { "mt": 4, "group": 0, "statusNibble": 13, "channel": 2, "reservedIdx": 0, "pressure": 2147483648 }
+  },
+  {
+    "case": "PitchBend_g0_c0_center",
+    "message": "ChannelVoice2.PitchBend",
+    "container": "UMP64",
+    "raw": "0x40E0000080000000",
+    "fields": { "mt": 4, "group": 0, "statusNibble": 14, "channel": 0, "reservedIdx": 0, "bend": 2147483648 }
+  }
+]
