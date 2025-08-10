@@ -9,3 +9,4 @@ swift/Midi2Swift/.build/
 swift/Midi2Swift/.swiftpm/
 tools/.build/
 tools/.swiftpm/
+swift/Midi2Swift/Sources/Core/Generated/
