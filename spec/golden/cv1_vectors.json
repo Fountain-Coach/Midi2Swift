@@ -1,0 +1,44 @@
+[
+  {
+    "case": "CV1_NoteOn_g0_c0_note60_vel100",
+    "message": "CV1.NoteOn",
+    "container": "UMP32",
+    "raw": "0x20_90_3C_64",
+    "fields": { "mt": 2, "group": 0, "status": 144, "data1": 60, "data2": 100 }
+  },
+  {
+    "case": "CV1_NoteOff_g2_c5_note60_vel0",
+    "message": "CV1.NoteOff",
+    "container": "UMP32",
+    "raw": "0x22_85_3C_00",
+    "fields": { "mt": 2, "group": 2, "status": 133, "data1": 60, "data2": 0 }
+  },
+  {
+    "case": "CV1_CC_g1_c10_ctrl7_val100",
+    "message": "CV1.ControlChange",
+    "container": "UMP32",
+    "raw": "0x21_CA_07_64",
+    "fields": { "mt": 2, "group": 1, "status": 202, "data1": 7, "data2": 100 }
+  },
+  {
+    "case": "CV1_ProgramChange_g0_c10_prog5",
+    "message": "CV1.ProgramChange",
+    "container": "UMP32",
+    "raw": "0x20_CA_05_00",
+    "fields": { "mt": 2, "group": 0, "status": 202, "program": 5, "reserved0": 0 }
+  },
+  {
+    "case": "CV1_ChannelPressure_g3_c1_val64",
+    "message": "CV1.ChannelPressure",
+    "container": "UMP32",
+    "raw": "0x23_D1_40_00",
+    "fields": { "mt": 2, "group": 3, "status": 209, "pressure": 64, "reserved0": 0 }
+  },
+  {
+    "case": "CV1_PitchBend_g0_c0_center",
+    "message": "CV1.PitchBend",
+    "container": "UMP32",
+    "raw": "0x20_E0_00_40",
+    "fields": { "mt": 2, "group": 0, "status": 224, "lsb": 0, "msb": 64 }
+  }
+]
