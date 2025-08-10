@@ -6,11 +6,33 @@ import Foundation
 }
 
 let argv = CommandLine.arguments
-guard let matrix = arg("--matrix", argv), let out = arg("--out", argv) else {
+guard let matrixPath = arg("--matrix", argv), let outDir = arg("--out", argv) else {
     fputs("usage: SwiftGen --matrix <matrix.json> --out <SourcesDir>\n", stderr)
     exit(2)
 }
 
-let url = URL(fileURLWithPath: matrix)
-let size = (try? Data(contentsOf: url).count) ?? 0
-print("SwiftGen: scanned matrix (\(size) bytes); pass-through (leaves sources intact) -> \(out)")
+// read matrix just to prove IO and size
+let matrixURL = URL(fileURLWithPath: matrixPath)
+let matrixBytes = (try? Data(contentsOf: matrixURL).count) ?? 0
+
+// ensure Generated dir
+let genDir = URL(fileURLWithPath: outDir).appendingPathComponent("Generated", isDirectory: true)
+try? FileManager.default.createDirectory(at: genDir, withIntermediateDirectories: true)
+
+// write a tiny, always-compilable file
+let ts = ISO8601DateFormatter().string(from: Date())
+let code = """
+// AUTO-GENERATED — do not edit.
+// Written by SwiftGen at \(ts)
+// Matrix bytes: \(matrixBytes)
+
+public enum CodegenInfo {
+    public static let generatedAt: String = "\(ts)"
+    public static let matrixByteCount: Int = \(matrixBytes)
+}
+"""
+
+let outFile = genDir.appendingPathComponent("CodegenInfo.swift")
+try code.write(to: outFile, atomically: true, encoding: .utf8)
+
+print("SwiftGen: generated \(outFile.path) (matrix \(matrixBytes) bytes)")
