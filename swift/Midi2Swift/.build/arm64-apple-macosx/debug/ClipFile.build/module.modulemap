@@ -1,4 +1,0 @@
-module ClipFile {
-    header "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ClipFile.build/ClipFile-Swift.h"
-    requires objc
-}

@@ -1,4 +1,0 @@
-module Stream {
-    header "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Stream.build/Stream-Swift.h"
-    requires objc
-}

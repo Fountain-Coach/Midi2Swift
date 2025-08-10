@@ -1,4 +1,0 @@
-module System {
-    header "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/System.build/System-Swift.h"
-    requires objc
-}
