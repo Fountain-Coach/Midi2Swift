@@ -1,0 +1,27 @@
+{
+  "$schema": "https://example.com/midi2-matrix.schema.json",
+  "meta": {
+    "generated_at": "2025-08-10T15:52:11.228864Z",
+    "pdf_sha256": {
+      "M2-103-UM_v1-2_Common Rules_for_MIDI-CI_Property_Exchange.pdf": "5deec28084ebc566116a07b5c206356db2ea23de6ecae3c075cbf31029708913",
+      "M2-104-UM_v1-1-2_UMP_and_MIDI_2-0_Protocol_Specification.pdf": "fc9b043e00600e031028f755c7075541e1e32057c3cbe9197a2a0755f1d69b05",
+      "M2-102-U_v1-1_Common_Rules_for_MIDI-CI_Profiles.pdf": "04479ab0801c2c3ef5e7a09bd4afc6d8dc92c1cb985e6c8e23adcfbd7331aacb",
+      "M2-101-UM_v1-2_MIDI-CI_Specification.pdf": "bba165c24d6fd6d4464b514da3f3cbcc4f7db4171057aa8a31f8910ea0037f3b",
+      "M2-116-U_v1-0_MIDI_Clip_File_Specification.pdf": "d182685b7d2f09667e112f6bb587ae7f0679c08dda39d163c61cbf181036da4b",
+      "M2-100-U_v1-1_MIDI_2-0_Specification_Overview.pdf": "cf509bf317f1ad6b36306b248edec05b122eedbad459c197ec6b3dae0ce7722e"
+    },
+    "schema_version": "1.0.0"
+  },
+  "enums": {},
+  "messages": [],
+  "transactions": {
+    "midi_ci": [],
+    "profiles": [],
+    "property_exchange": []
+  },
+  "clip_file": {
+    "header": null,
+    "chunks": [],
+    "invariants": []
+  }
+}

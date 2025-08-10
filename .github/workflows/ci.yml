@@ -1,0 +1,13 @@
+name: midi2swift-ci
+on:
+  push:
+  pull_request:
+jobs:
+  build-test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+      - name: Assert Full Spec
+        run: STRICT_FULL_SPEC=1 swift test --package-path swift/Midi2Swift
