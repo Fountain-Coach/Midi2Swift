@@ -1,0 +1,2148 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.xctest/Contents/MacOS/Midi2SwiftPackageTests",
+      "packagePath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift",
+      "productName" : "Midi2SwiftPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.AcceptanceGatesTests-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/AcceptanceGatesTests.build/sources",
+      "importPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Tests/AcceptanceGatesTests/AcceptanceGatesTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/UMP.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/System.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/ChannelVoice.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/Stream.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/MIDI_CI.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/Profiles.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/PropertyExchange.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/ClipFile.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/AcceptanceGatesTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "AcceptanceGatesTests",
+      "moduleOutputPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/AcceptanceGatesTests.swiftmodule",
+      "objects" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/AcceptanceGatesTests.build/AcceptanceGatesTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "midi2swift"
+      ],
+      "outputFileMapPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/AcceptanceGatesTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/AcceptanceGatesTests.build/AcceptanceGatesTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/AcceptanceGatesTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Tests/AcceptanceGatesTests/AcceptanceGatesTests.swift"
+      ],
+      "tempsPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/AcceptanceGatesTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.ChannelVoice-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ChannelVoice.build/sources",
+      "importPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/ChannelVoice/ChannelVoice.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/UMP.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ChannelVoice.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "ChannelVoice",
+      "moduleOutputPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/ChannelVoice.swiftmodule",
+      "objects" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ChannelVoice.build/ChannelVoice.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ChannelVoice.build/ChannelVoice-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "midi2swift"
+      ],
+      "outputFileMapPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ChannelVoice.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ChannelVoice.build/ChannelVoice.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/ChannelVoice.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/ChannelVoice/ChannelVoice.swift"
+      ],
+      "tempsPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ChannelVoice.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.ClipFile-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ClipFile.build/sources",
+      "importPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/ClipFile/ClipFile.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/UMP.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ClipFile.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "ClipFile",
+      "moduleOutputPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/ClipFile.swiftmodule",
+      "objects" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ClipFile.build/ClipFile.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ClipFile.build/ClipFile-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "midi2swift"
+      ],
+      "outputFileMapPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ClipFile.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ClipFile.build/ClipFile.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/ClipFile.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/ClipFile/ClipFile.swift"
+      ],
+      "tempsPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ClipFile.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.Core-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Core.build/sources",
+      "importPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/Core/Core.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Core.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Core",
+      "moduleOutputPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule",
+      "objects" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Core.build/Core.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Core.build/Core-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "midi2swift"
+      ],
+      "outputFileMapPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Core.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Core.build/Core.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/Core/Core.swift"
+      ],
+      "tempsPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Core.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.MIDI_CI-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/MIDI_CI.build/sources",
+      "importPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/MIDI_CI/MIDI_CI.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/UMP.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/MIDI_CI.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "MIDI_CI",
+      "moduleOutputPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/MIDI_CI.swiftmodule",
+      "objects" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/MIDI_CI.build/MIDI_CI.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/MIDI_CI.build/MIDI_CI-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "midi2swift"
+      ],
+      "outputFileMapPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/MIDI_CI.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/MIDI_CI.build/MIDI_CI.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/MIDI_CI.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/MIDI_CI/MIDI_CI.swift"
+      ],
+      "tempsPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/MIDI_CI.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.Midi2SwiftPackageTests-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.build/sources",
+      "importPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/AcceptanceGatesTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Midi2SwiftPackageTests",
+      "moduleOutputPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/Midi2SwiftPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.build/Midi2SwiftPackageTests-Swift.h",
+        "-color-diagnostics",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "midi2swift"
+      ],
+      "outputFileMapPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/Midi2SwiftPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.Profiles-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Profiles.build/sources",
+      "importPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/Profiles/Profiles.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/MIDI_CI.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Profiles.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Profiles",
+      "moduleOutputPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/Profiles.swiftmodule",
+      "objects" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Profiles.build/Profiles.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Profiles.build/Profiles-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "midi2swift"
+      ],
+      "outputFileMapPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Profiles.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Profiles.build/Profiles.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/Profiles.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/Profiles/Profiles.swift"
+      ],
+      "tempsPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Profiles.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.PropertyExchange-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/PropertyExchange.build/sources",
+      "importPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/PropertyExchange/PropertyExchange.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/MIDI_CI.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/PropertyExchange.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "PropertyExchange",
+      "moduleOutputPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/PropertyExchange.swiftmodule",
+      "objects" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/PropertyExchange.build/PropertyExchange.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/PropertyExchange.build/PropertyExchange-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "midi2swift"
+      ],
+      "outputFileMapPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/PropertyExchange.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/PropertyExchange.build/PropertyExchange.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/PropertyExchange.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/PropertyExchange/PropertyExchange.swift"
+      ],
+      "tempsPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/PropertyExchange.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.Stream-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Stream.build/sources",
+      "importPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/Stream/Stream.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/UMP.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Stream.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "Stream",
+      "moduleOutputPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/Stream.swiftmodule",
+      "objects" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Stream.build/Stream.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Stream.build/Stream-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "midi2swift"
+      ],
+      "outputFileMapPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Stream.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Stream.build/Stream.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/Stream.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/Stream/Stream.swift"
+      ],
+      "tempsPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Stream.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.System-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/System.build/sources",
+      "importPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/System/System.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/UMP.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/System.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "System",
+      "moduleOutputPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/System.swiftmodule",
+      "objects" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/System.build/System.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/System.build/System-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "midi2swift"
+      ],
+      "outputFileMapPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/System.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/System.build/System.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/System.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/System/System.swift"
+      ],
+      "tempsPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/System.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.UMP-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/UMP.build/sources",
+      "importPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/UMP/UMP.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/Core.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/UMP.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "UMP",
+      "moduleOutputPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/UMP.swiftmodule",
+      "objects" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/UMP.build/UMP.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/UMP.build/UMP-Swift.h",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "midi2swift"
+      ],
+      "outputFileMapPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/UMP.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/UMP.build/UMP.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules/UMP.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/UMP/UMP.swift"
+      ],
+      "tempsPath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/UMP.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "AcceptanceGatesTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "AcceptanceGatesTests",
+      "-package-name",
+      "midi2swift",
+      "-incremental",
+      "-c",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Tests/AcceptanceGatesTests/AcceptanceGatesTests.swift",
+      "-I",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "midi2swift",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "ChannelVoice" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "ChannelVoice",
+      "-package-name",
+      "midi2swift",
+      "-incremental",
+      "-c",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/ChannelVoice/ChannelVoice.swift",
+      "-I",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ChannelVoice.build/ChannelVoice-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "midi2swift",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "ClipFile" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "ClipFile",
+      "-package-name",
+      "midi2swift",
+      "-incremental",
+      "-c",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/ClipFile/ClipFile.swift",
+      "-I",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ClipFile.build/ClipFile-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "midi2swift",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "Core" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Core",
+      "-package-name",
+      "midi2swift",
+      "-incremental",
+      "-c",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/Core/Core.swift",
+      "-I",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Core.build/Core-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "midi2swift",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "MIDI_CI" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "MIDI_CI",
+      "-package-name",
+      "midi2swift",
+      "-incremental",
+      "-c",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/MIDI_CI/MIDI_CI.swift",
+      "-I",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/MIDI_CI.build/MIDI_CI-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "midi2swift",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "Midi2SwiftPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Midi2SwiftPackageTests",
+      "-package-name",
+      "midi2swift",
+      "-incremental",
+      "-c",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.build/Midi2SwiftPackageTests-Swift.h",
+      "-color-diagnostics",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "midi2swift",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "Profiles" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Profiles",
+      "-package-name",
+      "midi2swift",
+      "-incremental",
+      "-c",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/Profiles/Profiles.swift",
+      "-I",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Profiles.build/Profiles-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "midi2swift",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "PropertyExchange" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "PropertyExchange",
+      "-package-name",
+      "midi2swift",
+      "-incremental",
+      "-c",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/PropertyExchange/PropertyExchange.swift",
+      "-I",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/PropertyExchange.build/PropertyExchange-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "midi2swift",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "Stream" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Stream",
+      "-package-name",
+      "midi2swift",
+      "-incremental",
+      "-c",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/Stream/Stream.swift",
+      "-I",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Stream.build/Stream-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "midi2swift",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "System" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "System",
+      "-package-name",
+      "midi2swift",
+      "-incremental",
+      "-c",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/System/System.swift",
+      "-I",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/System.build/System-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "midi2swift",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "UMP" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "UMP",
+      "-package-name",
+      "midi2swift",
+      "-incremental",
+      "-c",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/UMP/UMP.swift",
+      "-I",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/UMP.build/UMP-Swift.h",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "midi2swift",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "AcceptanceGatesTests" : [
+      "ClipFile",
+      "PropertyExchange",
+      "Profiles",
+      "MIDI_CI",
+      "Stream",
+      "ChannelVoice",
+      "System",
+      "UMP",
+      "Core"
+    ],
+    "ChannelVoice" : [
+      "UMP",
+      "Core"
+    ],
+    "ClipFile" : [
+      "UMP",
+      "Core"
+    ],
+    "Core" : [
+
+    ],
+    "MIDI_CI" : [
+      "UMP",
+      "Core"
+    ],
+    "Midi2SwiftPackageTests" : [
+      "AcceptanceGatesTests",
+      "ClipFile",
+      "PropertyExchange",
+      "Profiles",
+      "MIDI_CI",
+      "Stream",
+      "ChannelVoice",
+      "System",
+      "UMP",
+      "Core"
+    ],
+    "Profiles" : [
+      "MIDI_CI",
+      "UMP",
+      "Core"
+    ],
+    "PropertyExchange" : [
+      "MIDI_CI",
+      "UMP",
+      "Core"
+    ],
+    "Stream" : [
+      "UMP",
+      "Core"
+    ],
+    "System" : [
+      "UMP",
+      "Core"
+    ],
+    "UMP" : [
+      "Core"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "enableAllTraits" : false
+  },
+  "writeCommands" : {
+    "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/AcceptanceGatesTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Tests/AcceptanceGatesTests/AcceptanceGatesTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/AcceptanceGatesTests.build/sources"
+    },
+    "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ChannelVoice.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/ChannelVoice/ChannelVoice.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ChannelVoice.build/sources"
+    },
+    "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ClipFile.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/ClipFile/ClipFile.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ClipFile.build/sources"
+    },
+    "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Core.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/Core/Core.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Core.build/sources"
+    },
+    "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/MIDI_CI.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/MIDI_CI/MIDI_CI.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/MIDI_CI.build/sources"
+    },
+    "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.build/sources"
+    },
+    "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/AcceptanceGatesTests.build/AcceptanceGatesTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ChannelVoice.build/ChannelVoice.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/ClipFile.build/ClipFile.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Core.build/Core.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/MIDI_CI.build/MIDI_CI.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Profiles.build/Profiles.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/PropertyExchange.build/PropertyExchange.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Stream.build/Stream.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/System.build/System.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/UMP.build/UMP.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Profiles.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/Profiles/Profiles.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Profiles.build/sources"
+    },
+    "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/PropertyExchange.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/PropertyExchange/PropertyExchange.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/PropertyExchange.build/sources"
+    },
+    "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Stream.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/Stream/Stream.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Stream.build/sources"
+    },
+    "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/System.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/System/System.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/System.build/sources"
+    },
+    "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/UMP.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/Sources/UMP/UMP.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/UMP.build/sources"
+    },
+    "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}
