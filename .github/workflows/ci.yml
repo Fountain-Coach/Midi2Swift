@@ -9,5 +9,37 @@ jobs:
       - uses: actions/checkout@v4
       - name: Select Xcode
         run: sudo xcode-select -s /Applications/Xcode.app
-      - name: Assert Full Spec
+      - name: Build tools
+        run: swift build --package-path tools
+      - name: Generate spec matrix
+        run: .build/debug/MatrixBuilder --out spec/matrix.json --sources spec/sources/checksums.json
+        working-directory: tools
+      - name: Codegen Swift sources
+      - name: Verify contract gates
+        run: .build/debug/ContractVerifier --matrix spec/matrix.json --golden spec/golden --sources ../swift/Midi2Swift/Sources
+        working-directory: tools
+        run: .build/debug/SwiftGen --in spec/matrix.json --out swift/Midi2Swift/Sources
+        working-directory: tools
+      - name: Enforce no generated files tracked
+        run: |
+          set -e
+          disallowed=$(git ls-files | egrep '^(spec/matrix.json|swift/Midi2Swift/Sources/.*/Generated/)') || true
+          if [ -n "$disallowed" ]; then
+            echo "These generated artifacts are tracked in git (should not be):"
+            echo "$disallowed"
+            exit 1
+          fi
+      - name: Upload generated sources
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-sources
+          path: swift/Midi2Swift/Sources/
+      - name: Assert Full Spec (strict tests)
         run: STRICT_FULL_SPEC=1 swift test --package-path swift/Midi2Swift
+      - name: Upload matrix.json
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: spec-matrix
+          path: spec/matrix.json
