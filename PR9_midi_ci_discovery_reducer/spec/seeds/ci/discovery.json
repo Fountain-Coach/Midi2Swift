@@ -1,0 +1,23 @@
+{
+  "flows": [
+    {
+      "name": "Discovery",
+      "states": [
+        "Idle",
+        "ProbeSent",
+        "Discovered",
+        "Failed"
+      ],
+      "events": [
+        "Start",
+        "DiscoveryReply",
+        "Timeout",
+        "Error"
+      ],
+      "provenance": {
+        "doc": "M2-101",
+        "section": "Discovery"
+      }
+    }
+  ]
+}
