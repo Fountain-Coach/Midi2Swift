@@ -1,0 +1,4 @@
+module Core {
+    header "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Core.build/Core-Swift.h"
+    requires objc
+}

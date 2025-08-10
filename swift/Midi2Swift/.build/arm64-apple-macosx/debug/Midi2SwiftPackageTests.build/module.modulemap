@@ -1,0 +1,4 @@
+module Midi2SwiftPackageTests {
+    header "/Users/benedikteickhoff/Development/Github-Desktop/Midi2Swift/swift/Midi2Swift/.build/arm64-apple-macosx/debug/Midi2SwiftPackageTests.build/Midi2SwiftPackageTests-Swift.h"
+    requires objc
+}

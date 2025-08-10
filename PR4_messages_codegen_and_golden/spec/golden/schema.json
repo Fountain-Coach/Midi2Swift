@@ -1,0 +1,48 @@
+{
+  "$schema": "https://example.com/midi2-golden.schema.json",
+  "schema_version": "1.0.0",
+  "description": "Golden vectors for UMP messages and CI/Profile/PE sequences",
+  "vector_types": [
+    "UMP"
+  ],
+  "UMP": {
+    "required": [
+      "case",
+      "message",
+      "container",
+      "raw",
+      "fields",
+      "provenance"
+    ],
+    "properties": {
+      "case": {
+        "type": "string"
+      },
+      "message": {
+        "type": "string",
+        "description": "Matrix message name (e.g., System.TimingClock)"
+      },
+      "container": {
+        "enum": [
+          "UMP32",
+          "UMP64",
+          "UMP128"
+        ]
+      },
+      "raw": {
+        "type": "string",
+        "pattern": "^0x[0-9A-F]+$"
+      },
+      "fields": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "provenance": {
+        "type": "object"
+      }
+    }
+  }
+}
