@@ -18,15 +18,19 @@ struct Message: Decodable {
     let name: String
     let container: String          // "UMP32" | "UMP64" (inferred if missing)
     let fields: [Field]
+    let defaults: [String: UInt64]?
 
-    enum CodingKeys: String, CodingKey { case name, container, fields }
+    enum CodingKeys: String, CodingKey { case name, container, containerBits, fields, defaults }
 
     init(from d: Decoder) throws {
         let c = try d.container(keyedBy: CodingKeys.self)
-        name   = try c.decode(String.self, forKey: .name)
-        fields = try c.decode([Field].self, forKey: .fields)
+        name     = try c.decode(String.self, forKey: .name)
+        fields   = try c.decode([Field].self, forKey: .fields)
+        defaults = try c.decodeIfPresent([String: UInt64].self, forKey: .defaults)
         if let explicit = try c.decodeIfPresent(String.self, forKey: .container) {
             container = explicit
+        } else if let bits = try c.decodeIfPresent(Int.self, forKey: .containerBits) {
+            container = (bits <= 32) ? "UMP32" : "UMP64"
         } else {
             let maxBit = fields.map { $0.bitOffset + $0.bitWidth }.max() ?? 0
             container = (maxBit <= 32) ? "UMP32" : "UMP64"
@@ -96,28 +100,55 @@ func sanitize(_ name: String) -> String {
     return String(name.unicodeScalars.map { allowed.contains($0) ? Character($0) : "_" })
 }
 
+func intType(for bits: Int) -> String {
+    if bits <= 8 { return "UInt8" }
+    if bits <= 16 { return "UInt16" }
+    if bits <= 32 { return "UInt32" }
+    return "UInt64"
+}
+
 // --- Codegen ---
-var out = header("Generic message structs from matrix (\(data.count) bytes)") + helpers + "\n"
+var out = header("Typed message structs from matrix (\(data.count) bytes)") + helpers + "\n"
 
 for msg in matrix.messages {
     let N = (msg.container.uppercased() == "UMP64") ? 64 : 32
     let typeName = "Gen_" + sanitize(msg.name)
 
-    out += "public struct \(typeName) { public var raw: UInt64; public init(raw: UInt64) { self.raw = raw } \n"
+    out += """
+    /// AUTO: \(msg.name) in \(msg.container)
+    public struct \(typeName) {
+        public var raw: UInt64
+        /// Create from raw container value.
+        public init(raw: UInt64) { self.raw = raw }
+
+    """
 
     for f in msg.fields {
         let fname = sanitize(f.name)
+        let ftype = intType(for: f.bitWidth)
+        let hi = f.bitOffset + f.bitWidth - 1
+        let rangeDoc: String
+        if let r = f.range, r.count == 2 { rangeDoc = " range [\(r[0])..\(r[1])]" } else { rangeDoc = "" }
         out += """
-        public var \(fname): UInt64 {
-            get { _get(raw, \(f.bitOffset), \(f.bitWidth), \(N)) }
-            set { raw = _set(raw, newValue, \(f.bitOffset), \(f.bitWidth), \(N)) }
+        /// bits [\(f.bitOffset)..\(hi)], width \(f.bitWidth).\(rangeDoc)
+        public var \(fname): \(ftype) {
+            get { \(ftype)(_get(raw, \(f.bitOffset), \(f.bitWidth), \(N))) }
+            set { raw = _set(raw, UInt64(newValue), \(f.bitOffset), \(f.bitWidth), \(N)) }
         }
+
         """
-        out += "\n"
     }
 
     if !msg.fields.isEmpty {
-        let params = msg.fields.map { "\(sanitize($0.name)): UInt64" }.joined(separator: ", ")
+        let params = msg.fields.map { f in
+            let name = sanitize(f.name)
+            let t = intType(for: f.bitWidth)
+            if let d = msg.defaults?[f.name] {
+                return "\(name): \(t) = \(t)(\(d))"
+            } else {
+                return "\(name): \(t)"
+            }
+        }.joined(separator: ", ")
         out += "public init(\(params)) { self.raw = 0\n"
         for f in msg.fields { out += "    self.\(sanitize(f.name)) = \(sanitize(f.name))\n" }
         out += "}\n"
