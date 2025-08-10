@@ -1,0 +1,23 @@
+[
+  {
+    "flow": "Discovery",
+    "case": "happy_path",
+    "start": "Idle",
+    "events": ["Start","Reply"],
+    "expect": { "end": "Discovered", "effects": ["sendSysEx","timer","none"] }
+  },
+  {
+    "flow": "Discovery",
+    "case": "timeout",
+    "start": "Idle",
+    "events": ["Start","Timeout"],
+    "expect": { "end": "Failed", "effects": ["sendSysEx","timer","none"] }
+  },
+  {
+    "flow": "ProtocolNegotiation",
+    "case": "happy_path",
+    "start": "Idle",
+    "events": ["Start","Accept"],
+    "expect": { "end": "Negotiated", "effects": ["sendSysEx","timer","none"] }
+  }
+]
