@@ -1,0 +1,11 @@
+[
+  { "name": "Clock-basic",          "raw": "0x10F80000" },
+  { "name": "Start-basic",          "raw": "0x10FA0000" },
+  { "name": "Continue-basic",       "raw": "0x10FB0000" },
+  { "name": "Stop-basic",           "raw": "0x10FC0000" },
+  { "name": "ActiveSensing-basic",  "raw": "0x10FE0000" },
+  { "name": "Reset-basic",          "raw": "0x10FF0000" },
+  { "name": "Clock-group15",        "raw": "0x1FF80000" },
+  { "name": "Reset-group15",        "raw": "0x1FFF0000" }
+]
+
