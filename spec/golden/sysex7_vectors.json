@@ -1,0 +1,30 @@
+[
+  {
+    "case": "Sysex7_empty_complete_g0",
+    "message": "SysEx7.Word",
+    "container": "UMP32",
+    "raw": "0x30_00_00_00",
+    "fields": { "mt": 3, "group": 0, "status": 0, "numBytes": 0, "data1": 0, "data2": 0 }
+  },
+  {
+    "case": "Sysex7_1byte_complete_g1",
+    "message": "SysEx7.Word",
+    "container": "UMP32",
+    "raw": "0x31_10_7E_00",
+    "fields": { "mt": 3, "group": 1, "status": 0, "numBytes": 1, "data1": 126, "data2": 0 }
+  },
+  {
+    "case": "Sysex7_2byte_start_g0",
+    "message": "SysEx7.Word",
+    "container": "UMP32",
+    "raw": "0x30_21_7E_55",
+    "fields": { "mt": 3, "group": 0, "status": 1, "numBytes": 2, "data1": 126, "data2": 85 }
+  },
+  {
+    "case": "Sysex7_1byte_end_g0",
+    "message": "SysEx7.Word",
+    "container": "UMP32",
+    "raw": "0x30_31_AA_00",
+    "fields": { "mt": 3, "group": 0, "status": 3, "numBytes": 1, "data1": 170, "data2": 0 }
+  }
+]

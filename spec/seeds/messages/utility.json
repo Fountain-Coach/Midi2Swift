@@ -24,8 +24,7 @@
         { "name": "timeMSB", "bitOffset": 16, "bitWidth": 8 },
         { "name": "timeLSB", "bitOffset": 24, "bitWidth": 8 }
       ],
-      "defaults": { "mt": 0, "reservedGroup": 0, "opcode": 1 },
-      "provenance": { "doc": "M2-104 §7.2.2.1, Table 26/Appendix F" }
+      "defaults": { "mt": 0, "reservedGroup": 0, "opcode": 1 }
     },
     {
       "family": "Utility",
@@ -38,8 +37,7 @@
         { "name": "timeMSB", "bitOffset": 16, "bitWidth": 8 },
         { "name": "timeLSB", "bitOffset": 24, "bitWidth": 8 }
       ],
-      "defaults": { "mt": 0, "reservedGroup": 0, "opcode": 2 },
-      "provenance": { "doc": "M2-104 §7.2.2.2, Table 26/Appendix F" }
+      "defaults": { "mt": 0, "reservedGroup": 0, "opcode": 2 }
     }
   ]
 }
