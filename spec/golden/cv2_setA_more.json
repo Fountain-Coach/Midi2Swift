@@ -1,0 +1,30 @@
+[
+  {
+    "case": "ChannelPressure_g7_c15_min",
+    "message": "ChannelVoice2.ChannelPressure",
+    "container": "UMP64",
+    "raw": "0x47DF000000000000",
+    "fields": { "mt": 4, "group": 7, "statusNibble": 13, "channel": 15, "reservedIdx": 0, "pressure": 0 }
+  },
+  {
+    "case": "ChannelPressure_g3_c1_max",
+    "message": "ChannelVoice2.ChannelPressure",
+    "container": "UMP64",
+    "raw": "0x43D10000FFFFFFFF",
+    "fields": { "mt": 4, "group": 3, "statusNibble": 13, "channel": 1, "reservedIdx": 0, "pressure": 4294967295 }
+  },
+  {
+    "case": "PitchBend_g2_c0_min",
+    "message": "ChannelVoice2.PitchBend",
+    "container": "UMP64",
+    "raw": "0x42E0000000000000",
+    "fields": { "mt": 4, "group": 2, "statusNibble": 14, "channel": 0, "reservedIdx": 0, "bend": 0 }
+  },
+  {
+    "case": "PitchBend_g2_c0_max",
+    "message": "ChannelVoice2.PitchBend",
+    "container": "UMP64",
+    "raw": "0x42E00000FFFFFFFF",
+    "fields": { "mt": 4, "group": 2, "statusNibble": 14, "channel": 0, "reservedIdx": 0, "bend": 4294967295 }
+  }
+]
