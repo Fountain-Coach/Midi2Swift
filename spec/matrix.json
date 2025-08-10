@@ -954,6 +954,276 @@
     {
       "containerBits" : 32,
       "defaults" : {
+        "data1" : 0,
+        "data2" : 0,
+        "group" : 0,
+        "mt" : 1,
+        "status" : 254
+      },
+      "family" : "SystemRealTime",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 8,
+          "name" : "status"
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "data1",
+          "reserved" : true
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "data2",
+          "reserved" : true
+        }
+      ],
+      "name" : "SystemRealTime.ActiveSensing"
+    },
+    {
+      "containerBits" : 32,
+      "defaults" : {
+        "data1" : 0,
+        "data2" : 0,
+        "group" : 0,
+        "mt" : 1,
+        "status" : 248
+      },
+      "family" : "SystemRealTime",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 8,
+          "name" : "status"
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "data1",
+          "reserved" : true
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "data2",
+          "reserved" : true
+        }
+      ],
+      "name" : "SystemRealTime.Clock"
+    },
+    {
+      "containerBits" : 32,
+      "defaults" : {
+        "data1" : 0,
+        "data2" : 0,
+        "group" : 0,
+        "mt" : 1,
+        "status" : 251
+      },
+      "family" : "SystemRealTime",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 8,
+          "name" : "status"
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "data1",
+          "reserved" : true
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "data2",
+          "reserved" : true
+        }
+      ],
+      "name" : "SystemRealTime.Continue"
+    },
+    {
+      "containerBits" : 32,
+      "defaults" : {
+        "data1" : 0,
+        "data2" : 0,
+        "group" : 0,
+        "mt" : 1,
+        "status" : 255
+      },
+      "family" : "SystemRealTime",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 8,
+          "name" : "status"
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "data1",
+          "reserved" : true
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "data2",
+          "reserved" : true
+        }
+      ],
+      "name" : "SystemRealTime.Reset"
+    },
+    {
+      "containerBits" : 32,
+      "defaults" : {
+        "data1" : 0,
+        "data2" : 0,
+        "group" : 0,
+        "mt" : 1,
+        "status" : 250
+      },
+      "family" : "SystemRealTime",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 8,
+          "name" : "status"
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "data1",
+          "reserved" : true
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "data2",
+          "reserved" : true
+        }
+      ],
+      "name" : "SystemRealTime.Start"
+    },
+    {
+      "containerBits" : 32,
+      "defaults" : {
+        "data1" : 0,
+        "data2" : 0,
+        "group" : 0,
+        "mt" : 1,
+        "status" : 252
+      },
+      "family" : "SystemRealTime",
+      "fields" : [
+        {
+          "bitOffset" : 0,
+          "bitWidth" : 4,
+          "name" : "mt"
+        },
+        {
+          "bitOffset" : 4,
+          "bitWidth" : 4,
+          "name" : "group",
+          "range" : [
+            0,
+            15
+          ]
+        },
+        {
+          "bitOffset" : 8,
+          "bitWidth" : 8,
+          "name" : "status"
+        },
+        {
+          "bitOffset" : 16,
+          "bitWidth" : 8,
+          "name" : "data1",
+          "reserved" : true
+        },
+        {
+          "bitOffset" : 24,
+          "bitWidth" : 8,
+          "name" : "data2",
+          "reserved" : true
+        }
+      ],
+      "name" : "SystemRealTime.Stop"
+    },
+    {
+      "containerBits" : 32,
+      "defaults" : {
         "mt" : 0,
         "opcode" : 1,
         "reservedGroup" : 0
@@ -1071,7 +1341,7 @@
     }
   ],
   "meta" : {
-    "generated_at" : "2025-08-10T18:53:13Z",
+    "generated_at" : "2025-08-10T19:56:27Z",
     "source" : "seeds-only"
   },
   "profiles" : {
