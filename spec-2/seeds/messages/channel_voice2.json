@@ -1,0 +1,202 @@
+{
+  "items": [
+    {
+      "family": "ChannelVoice2",
+      "name": "ChannelVoice2.NoteOn",
+      "containerBits": 64,
+      "fields": [
+        {
+          "name": "mt",
+          "bitOffset": 0,
+          "bitWidth": 4
+        },
+        {
+          "name": "group",
+          "bitOffset": 4,
+          "bitWidth": 4,
+          "range": [
+            0,
+            15
+          ]
+        },
+        {
+          "name": "statusNibble",
+          "bitOffset": 8,
+          "bitWidth": 4
+        },
+        {
+          "name": "channel",
+          "bitOffset": 12,
+          "bitWidth": 4,
+          "range": [
+            0,
+            15
+          ]
+        },
+        {
+          "name": "noteNumber",
+          "bitOffset": 16,
+          "bitWidth": 8,
+          "range": [
+            0,
+            127
+          ]
+        },
+        {
+          "name": "attributeType",
+          "bitOffset": 24,
+          "bitWidth": 8
+        },
+        {
+          "name": "velocity",
+          "bitOffset": 32,
+          "bitWidth": 16,
+          "range": [
+            0,
+            65535
+          ]
+        },
+        {
+          "name": "attributeData",
+          "bitOffset": 48,
+          "bitWidth": 16
+        }
+      ],
+      "defaults": {
+        "mt": 4,
+        "statusNibble": 9,
+        "attributeType": 0,
+        "attributeData": 0
+      }
+    },
+    {
+      "family": "ChannelVoice2",
+      "name": "ChannelVoice2.NoteOff",
+      "containerBits": 64,
+      "fields": [
+        {
+          "name": "mt",
+          "bitOffset": 0,
+          "bitWidth": 4
+        },
+        {
+          "name": "group",
+          "bitOffset": 4,
+          "bitWidth": 4,
+          "range": [
+            0,
+            15
+          ]
+        },
+        {
+          "name": "statusNibble",
+          "bitOffset": 8,
+          "bitWidth": 4
+        },
+        {
+          "name": "channel",
+          "bitOffset": 12,
+          "bitWidth": 4,
+          "range": [
+            0,
+            15
+          ]
+        },
+        {
+          "name": "noteNumber",
+          "bitOffset": 16,
+          "bitWidth": 8,
+          "range": [
+            0,
+            127
+          ]
+        },
+        {
+          "name": "attributeType",
+          "bitOffset": 24,
+          "bitWidth": 8
+        },
+        {
+          "name": "velocity",
+          "bitOffset": 32,
+          "bitWidth": 16,
+          "range": [
+            0,
+            65535
+          ]
+        },
+        {
+          "name": "attributeData",
+          "bitOffset": 48,
+          "bitWidth": 16
+        }
+      ],
+      "defaults": {
+        "mt": 4,
+        "statusNibble": 8,
+        "attributeType": 0,
+        "attributeData": 0
+      }
+    },
+    {
+      "family": "ChannelVoice2",
+      "name": "ChannelVoice2.PolyPressure",
+      "containerBits": 64,
+      "fields": [
+        {
+          "name": "mt",
+          "bitOffset": 0,
+          "bitWidth": 4
+        },
+        {
+          "name": "group",
+          "bitOffset": 4,
+          "bitWidth": 4,
+          "range": [
+            0,
+            15
+          ]
+        },
+        {
+          "name": "statusNibble",
+          "bitOffset": 8,
+          "bitWidth": 4
+        },
+        {
+          "name": "channel",
+          "bitOffset": 12,
+          "bitWidth": 4,
+          "range": [
+            0,
+            15
+          ]
+        },
+        {
+          "name": "noteNumber",
+          "bitOffset": 16,
+          "bitWidth": 8,
+          "range": [
+            0,
+            127
+          ]
+        },
+        {
+          "name": "reserved",
+          "bitOffset": 24,
+          "bitWidth": 8,
+          "reserved": true
+        },
+        {
+          "name": "pressure",
+          "bitOffset": 32,
+          "bitWidth": 32
+        }
+      ],
+      "defaults": {
+        "mt": 4,
+        "statusNibble": 10,
+        "reserved": 0
+      }
+    }
+  ]
+}
