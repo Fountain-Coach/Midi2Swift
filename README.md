@@ -25,3 +25,61 @@ STRICT_FULL_SPEC=1 swift test --package-path swift/Midi2Swift
 5. Reproducibility: deterministic codegen; PDF SHA-256s recorded.
 
 > Until the matrix is populated and generators are run, tests will fail by design.
+
+## Building the spec matrix locally
+```bash
+make tools
+make matrix   # writes spec/matrix.json from spec/sources/checksums.json
+make assert-full-spec
+```
+
+## Code generation
+```bash
+make tools
+make matrix
+make codegen   # emits generated Swift into swift/Midi2Swift/Sources
+make assert-full-spec
+```
+
+## Generated artifacts policy
+The following files/folders are **generated** and **should not be committed**:
+- `spec/matrix.json`, `spec/coverage.json`, `spec/coverage.html`
+- `swift/Midi2Swift/Sources/**/Generated/**`
+
+CI enforces this: if any of the above appear as tracked files, the build fails.
+Use:
+```bash
+make clean   # removes generated files
+```
+
+## Stream & SysEx scaffolding
+This PR adds a **transport-agnostic SysEx sequencer** (`Stream/SysExSequencer.swift`) that splits and rejoins payloads
+for SysEx7/SysEx8 chunking. Mapping to UMP words will be wired once the matrix contains the normative layouts.
+
+## Message seeds
+We keep small, **spec-backed seeds** under `spec/seeds/messages/` for early CI signal
+(e.g., System Real Time). MatrixBuilder merges these into `matrix.messages` before parsing
+full tables. Each seed item includes bit-accurate fields and provenance.
+
+## SysEx7/8 → UMP mapping (agnostic)
+Added `Stream/SysExUMP.swift` with a configurable `SysExUMPMapper` that wraps/unwraps `SysExSequencer` pieces
+into UMP32/UMP128 arrays. It uses a test-configurable header scheme now and will be swapped for spec-backed
+constants when the matrix tables land.
+
+## MIDI-CI reducer skeleton
+Added a small, spec-agnostic `MIDI_CI/CIReducer.swift` with `CIState`, `CIEvent`, and `ciReduce` for Discovery.
+This will be replaced by code-generated reducers once CI flows are lifted into the matrix.
+
+## Verifier (full-spec gates)
+Run the contract verifier locally (strictness comes from `STRICT_FULL_SPEC=1`):
+```bash
+make tools
+make matrix
+make codegen
+make verify            # structural checks + golden coverage + generated source sanity
+STRICT_FULL_SPEC=1 make verify  # fails until full coverage is achieved
+```
+
+## Profiles seeds & ID type
+- Added `spec/seeds/profiles/common.json` listing Profiles common messages and addressing scopes (structure-only; parsed later).
+- Added `Profiles/ProfileID.swift` with an opaque `ProfileID` that supports 32-bit hex and 128-bit UUID forms, plus tests.

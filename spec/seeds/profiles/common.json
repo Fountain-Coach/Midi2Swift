@@ -1,0 +1,94 @@
+{
+  "messages": [
+    {
+      "name": "ProfileInquiry",
+      "addressing": [
+        "Endpoint",
+        "FunctionBlock",
+        "Group",
+        "Channel"
+      ],
+      "provenance": {
+        "doc": "M2-102"
+      }
+    },
+    {
+      "name": "ProfileInquiryReply",
+      "addressing": [
+        "Endpoint",
+        "FunctionBlock",
+        "Group",
+        "Channel"
+      ],
+      "provenance": {
+        "doc": "M2-102"
+      }
+    },
+    {
+      "name": "SetProfileOn",
+      "addressing": [
+        "FunctionBlock",
+        "Group",
+        "Channel"
+      ],
+      "provenance": {
+        "doc": "M2-102"
+      }
+    },
+    {
+      "name": "SetProfileOff",
+      "addressing": [
+        "FunctionBlock",
+        "Group",
+        "Channel"
+      ],
+      "provenance": {
+        "doc": "M2-102"
+      }
+    },
+    {
+      "name": "ProfileEnabledReport",
+      "addressing": [
+        "FunctionBlock",
+        "Group",
+        "Channel"
+      ],
+      "provenance": {
+        "doc": "M2-102"
+      }
+    },
+    {
+      "name": "ProfileDisabledReport",
+      "addressing": [
+        "FunctionBlock",
+        "Group",
+        "Channel"
+      ],
+      "provenance": {
+        "doc": "M2-102"
+      }
+    },
+    {
+      "name": "ProfileDetailsInquiry",
+      "addressing": [
+        "FunctionBlock",
+        "Group",
+        "Channel"
+      ],
+      "provenance": {
+        "doc": "M2-102"
+      }
+    },
+    {
+      "name": "ProfileDetailsReply",
+      "addressing": [
+        "FunctionBlock",
+        "Group",
+        "Channel"
+      ],
+      "provenance": {
+        "doc": "M2-102"
+      }
+    }
+  ]
+}
