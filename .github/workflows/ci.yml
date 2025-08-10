@@ -6,12 +6,20 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: macos-14
     steps:
       - uses: actions/checkout@v4
 
-      - name: Swift version
-        run: swift --version
+      # Select Xcode 16 (Swift 6)
+      - name: Select Xcode 16 (Swift 6)
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '16'
+
+      - name: Show toolchain
+        run: |
+          xcodebuild -version
+          swift --version
 
       - name: Build tools
         run: swift build -c debug
@@ -25,13 +33,13 @@ jobs:
         run: .build/debug/SwiftGen --matrix spec/matrix.json --out swift/Midi2Swift/Sources
         working-directory: tools
 
-      # PRs: non-strict verify so they can go green while we build coverage.
+      # PRs: non-strict verify, so feature PRs can go green while we add coverage
       - name: Verify (non-strict on PRs)
         if: ${{ github.event_name == 'pull_request' }}
         run: .build/debug/ContractVerifier --matrix spec/matrix.json --golden spec/golden --sources ../swift/Midi2Swift/Sources
         working-directory: tools
 
-      # main: strict verify to enforce 100% when merging to main.
+      # main: strict verify (enforce 100% on main)
       - name: Verify (STRICT on main)
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
         env:
