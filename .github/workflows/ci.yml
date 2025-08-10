@@ -29,23 +29,23 @@ jobs:
         working-directory: tools
 
       - name: Build matrix
-        run: .build/debug/MatrixBuilder --in spec --out spec/matrix.json
+        run: .build/debug/MatrixBuilder --in "$GITHUB_WORKSPACE/spec" --out "$GITHUB_WORKSPACE/spec/matrix.json"
         working-directory: tools
 
       - name: Codegen Swift sources
-        run: .build/debug/SwiftGen --matrix spec/matrix.json --out swift/Midi2Swift/Sources
+        run: .build/debug/SwiftGen --matrix "$GITHUB_WORKSPACE/spec/matrix.json" --out "$GITHUB_WORKSPACE/swift/Midi2Swift/Sources/Core"
         working-directory: tools
 
       - name: Verify (non-strict)
         if: ${{ github.event_name != 'push' || !startsWith(github.ref, 'refs/tags/v') }}
-        run: .build/debug/ContractVerifier --matrix spec/matrix.json --golden spec/golden --sources ../swift/Midi2Swift/Sources
+        run: .build/debug/ContractVerifier --matrix "$GITHUB_WORKSPACE/spec/matrix.json" --golden "$GITHUB_WORKSPACE/spec/golden" --sources "$GITHUB_WORKSPACE/swift/Midi2Swift/Sources"
         working-directory: tools
 
       - name: Verify (STRICT release)
         if: ${{ startsWith(github.ref, 'refs/tags/v') }}
         env:
           STRICT_FULL_SPEC: '1'
-        run: .build/debug/ContractVerifier --matrix spec/matrix.json --golden spec/golden --sources ../swift/Midi2Swift/Sources
+        run: .build/debug/ContractVerifier --matrix "$GITHUB_WORKSPACE/spec/matrix.json" --golden "$GITHUB_WORKSPACE/spec/golden" --sources "$GITHUB_WORKSPACE/swift/Midi2Swift/Sources"
         working-directory: tools
 
       - name: Build Swift package
